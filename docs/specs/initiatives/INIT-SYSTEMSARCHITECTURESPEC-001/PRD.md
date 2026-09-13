@@ -1,7 +1,7 @@
 # PRD — Systems Architecture Spec — Machine-Readable System Contract (SAS v0.1)
 
 **Initiative:** `INIT-SYSTEMSARCHITECTURESPEC-001`
-**Home repo:** `github.com/plexusone/systems-architecture-spec`
+**Home repo:** `github.com/plexusone/systemspec-architecture`
 **Status:** proposed
 
 ## Problem

@@ -3,7 +3,7 @@ package threatmodel
 import (
 	"testing"
 
-	"github.com/plexusone/systems-architecture-spec/sas"
+	"github.com/plexusone/systemspec-architecture/sas"
 )
 
 // This suite asserts against threat-model-spec's real, documented

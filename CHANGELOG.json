@@ -1,7 +1,7 @@
 {
   "irVersion": "1.0",
   "project": "systems-architecture-spec",
-  "repository": "https://github.com/plexusone/systems-architecture-spec",
+  "repository": "https://github.com/plexusone/systemspec-architecture",
   "versioning": "semver",
   "commitConvention": "conventional",
   "maintainers": [

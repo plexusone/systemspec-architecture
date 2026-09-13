@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/plexusone/systems-architecture-spec/sas"
+	"github.com/plexusone/systemspec-architecture/sas"
 )
 
 // writeOperations are the sas.Operation values that constitute a write,

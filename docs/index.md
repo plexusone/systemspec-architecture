@@ -38,7 +38,7 @@ are implemented and dogfooded end to end on real PlexusOne portfolio systems.
 ## Quick Example
 
 ```go
-import "github.com/plexusone/systems-architecture-spec/sas"
+import "github.com/plexusone/systemspec-architecture/sas"
 
 arch := sas.Architecture{
     Version: "0.1",

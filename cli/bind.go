@@ -6,7 +6,7 @@ import (
 	"os"
 	"sort"
 
-	"github.com/plexusone/systems-architecture-spec/sas"
+	"github.com/plexusone/systemspec-architecture/sas"
 )
 
 // pidlProtocol is the minimal subset of a PIDL document binding

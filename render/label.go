@@ -3,7 +3,7 @@ package render
 import (
 	"strings"
 
-	"github.com/plexusone/systems-architecture-spec/sas"
+	"github.com/plexusone/systemspec-architecture/sas"
 )
 
 // EdgeLabel chooses what text to show on a rendered relationship: the

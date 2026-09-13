@@ -3,7 +3,7 @@ package diff
 import (
 	"time"
 
-	"github.com/plexusone/systems-architecture-spec/sas"
+	"github.com/plexusone/systemspec-architecture/sas"
 )
 
 // Baseline is a named, approved architecture version. Once approved, a

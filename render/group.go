@@ -1,6 +1,6 @@
 package render
 
-import "github.com/plexusone/systems-architecture-spec/sas"
+import "github.com/plexusone/systemspec-architecture/sas"
 
 // Group is a bucket of nodes rendered together, either because they share
 // membership in a boundary of the requested kind, or (Boundary == nil)

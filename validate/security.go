@@ -3,7 +3,7 @@ package validate
 import (
 	"fmt"
 
-	"github.com/plexusone/systems-architecture-spec/sas"
+	"github.com/plexusone/systemspec-architecture/sas"
 )
 
 // writeOperations are the Operation values the security profile treats

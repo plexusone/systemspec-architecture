@@ -17,7 +17,7 @@ package threatmodel
 import (
 	"strings"
 
-	"github.com/plexusone/systems-architecture-spec/sas"
+	"github.com/plexusone/systemspec-architecture/sas"
 )
 
 // DiagramIR mirrors the system-under-analysis fields of

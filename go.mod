@@ -1,4 +1,4 @@
-module github.com/plexusone/systems-architecture-spec
+module github.com/plexusone/systemspec-architecture
 
 go 1.26.5
 

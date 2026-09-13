@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/plexusone/systems-architecture-spec/bridge/threatmodel"
-	"github.com/plexusone/systems-architecture-spec/sas"
+	"github.com/plexusone/systemspec-architecture/bridge/threatmodel"
+	"github.com/plexusone/systemspec-architecture/sas"
 )
 
 // ExportThreatModelOptions configures an ExportThreatModel run.

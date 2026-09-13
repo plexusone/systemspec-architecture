@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/plexusone/systems-architecture-spec/sas"
+	"github.com/plexusone/systemspec-architecture/sas"
 )
 
 func TestBaseline_JSONRoundTrip(t *testing.T) {

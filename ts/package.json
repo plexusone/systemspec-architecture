@@ -1,5 +1,5 @@
 {
-  "name": "@plexusone/systems-architecture-spec",
+  "name": "@plexusone/systemspec-architecture",
   "version": "0.1.0",
   "description": "TypeScript SDK for Systems Architecture Spec (SAS) - Zod schemas and types generated from the Go-first canonical model",
   "type": "module",
@@ -36,13 +36,13 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/plexusone/systems-architecture-spec.git",
+    "url": "https://github.com/plexusone/systemspec-architecture.git",
     "directory": "ts"
   },
   "bugs": {
-    "url": "https://github.com/plexusone/systems-architecture-spec/issues"
+    "url": "https://github.com/plexusone/systemspec-architecture/issues"
   },
-  "homepage": "https://github.com/plexusone/systems-architecture-spec#readme",
+  "homepage": "https://github.com/plexusone/systemspec-architecture#readme",
   "dependencies": {
     "zod": "^3.23.0"
   },

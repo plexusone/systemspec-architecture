@@ -3,7 +3,7 @@ package catalog
 import (
 	"strings"
 
-	"github.com/plexusone/systems-architecture-spec/sas"
+	"github.com/plexusone/systemspec-architecture/sas"
 )
 
 // httpOperations maps HTTP methods to the generic verb they specialize.

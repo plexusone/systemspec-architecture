@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/plexusone/systems-architecture-spec/assure"
-	"github.com/plexusone/systems-architecture-spec/sas"
+	"github.com/plexusone/systemspec-architecture/assure"
+	"github.com/plexusone/systemspec-architecture/sas"
 )
 
 // AssureOptions configures an Assure run.

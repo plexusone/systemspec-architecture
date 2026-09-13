@@ -1,6 +1,6 @@
 package catalog
 
-import "github.com/plexusone/systems-architecture-spec/sas"
+import "github.com/plexusone/systemspec-architecture/sas"
 
 // providerCatalogs maps a Technology.Provider to its display-name lookup
 // table. Adding a new provider catalog means adding one entry here plus

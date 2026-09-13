@@ -5,7 +5,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/plexusone/systems-architecture-spec/sas"
+	"github.com/plexusone/systemspec-architecture/sas"
 )
 
 // Diff computes the ChangeSet from base to proposed: what an author would

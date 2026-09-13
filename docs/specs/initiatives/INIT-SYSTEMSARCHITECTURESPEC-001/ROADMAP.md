@@ -1,7 +1,7 @@
 # ROADMAP — Systems Architecture Spec — Machine-Readable System Contract (SAS v0.1)
 
 **Initiative:** `INIT-SYSTEMSARCHITECTURESPEC-001`
-**Repository:** `github.com/plexusone/systems-architecture-spec`
+**Repository:** `github.com/plexusone/systemspec-architecture`
 
 ## Phase 1 — Core IR & Schema Pipeline
 

@@ -8,20 +8,20 @@
 [![Visualization][viz-svg]][viz-url]
 [![License][license-svg]][license-url]
 
- [go-ci-svg]: https://github.com/plexusone/systems-architecture-spec/actions/workflows/go-ci.yaml/badge.svg?branch=main
- [go-ci-url]: https://github.com/plexusone/systems-architecture-spec/actions/workflows/go-ci.yaml
- [go-lint-svg]: https://github.com/plexusone/systems-architecture-spec/actions/workflows/go-lint.yaml/badge.svg?branch=main
- [go-lint-url]: https://github.com/plexusone/systems-architecture-spec/actions/workflows/go-lint.yaml
- [go-sast-svg]: https://github.com/plexusone/systems-architecture-spec/actions/workflows/go-sast-codeql.yaml/badge.svg?branch=main
- [go-sast-url]: https://github.com/plexusone/systems-architecture-spec/actions/workflows/go-sast-codeql.yaml
- [docs-godoc-svg]: https://pkg.go.dev/badge/github.com/plexusone/systems-architecture-spec
- [docs-godoc-url]: https://pkg.go.dev/github.com/plexusone/systems-architecture-spec
+ [go-ci-svg]: https://github.com/plexusone/systemspec-architecture/actions/workflows/go-ci.yaml/badge.svg?branch=main
+ [go-ci-url]: https://github.com/plexusone/systemspec-architecture/actions/workflows/go-ci.yaml
+ [go-lint-svg]: https://github.com/plexusone/systemspec-architecture/actions/workflows/go-lint.yaml/badge.svg?branch=main
+ [go-lint-url]: https://github.com/plexusone/systemspec-architecture/actions/workflows/go-lint.yaml
+ [go-sast-svg]: https://github.com/plexusone/systemspec-architecture/actions/workflows/go-sast-codeql.yaml/badge.svg?branch=main
+ [go-sast-url]: https://github.com/plexusone/systemspec-architecture/actions/workflows/go-sast-codeql.yaml
+ [docs-godoc-svg]: https://pkg.go.dev/badge/github.com/plexusone/systemspec-architecture
+ [docs-godoc-url]: https://pkg.go.dev/github.com/plexusone/systemspec-architecture
  [docs-mkdoc-svg]: https://img.shields.io/badge/docs-guide-blue.svg
  [docs-mkdoc-url]: https://plexusone.dev/systems-architecture-spec
  [viz-svg]: https://img.shields.io/badge/repo-visualization-blue.svg
  [viz-url]: https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=plexusone%2Fsystems-architecture-spec
  [license-svg]: https://img.shields.io/badge/license-MIT-blue.svg
- [license-url]: https://github.com/plexusone/systems-architecture-spec/blob/main/LICENSE
+ [license-url]: https://github.com/plexusone/systemspec-architecture/blob/main/LICENSE
 
 A statically-typed-friendly, Go-first specification for describing software systems as
 semantic graphs: nodes, typed relationships, boundaries, identities, entitlements, and

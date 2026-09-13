@@ -12,7 +12,7 @@ import (
 
 	"github.com/invopop/jsonschema"
 
-	"github.com/plexusone/systems-architecture-spec/sas"
+	"github.com/plexusone/systemspec-architecture/sas"
 )
 
 func main() {

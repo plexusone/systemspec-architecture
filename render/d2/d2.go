@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/plexusone/systems-architecture-spec/render"
-	"github.com/plexusone/systems-architecture-spec/sas"
+	"github.com/plexusone/systemspec-architecture/render"
+	"github.com/plexusone/systemspec-architecture/sas"
 )
 
 // Render produces D2 source for view's selection over arch. Nodes are

@@ -1,6 +1,6 @@
 package validate
 
-import "github.com/plexusone/systems-architecture-spec/sas"
+import "github.com/plexusone/systemspec-architecture/sas"
 
 // Validate checks arch against the always-on referential-integrity rules
 // plus the rules for every requested profile, and returns every finding.

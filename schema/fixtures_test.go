@@ -8,8 +8,8 @@ import (
 
 	"github.com/santhosh-tekuri/jsonschema/v6"
 
-	"github.com/plexusone/systems-architecture-spec/sas"
-	"github.com/plexusone/systems-architecture-spec/validate"
+	"github.com/plexusone/systemspec-architecture/sas"
+	"github.com/plexusone/systemspec-architecture/validate"
 )
 
 func compileArchitectureSchema(t *testing.T) *jsonschema.Schema {

@@ -1,6 +1,6 @@
 package render
 
-import "github.com/plexusone/systems-architecture-spec/sas"
+import "github.com/plexusone/systemspec-architecture/sas"
 
 // Shape is an abstract node shape, mapped to concrete syntax by each
 // format-specific renderer, so every format visually distinguishes the
