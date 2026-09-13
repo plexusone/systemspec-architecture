@@ -98,7 +98,7 @@ func Export(arch *sas.Architecture) DiagramIR {
 		diagram.Boundaries = append(diagram.Boundaries, Boundary{
 			ID:    b.ID,
 			Label: b.Name,
-			Type:  boundaryType(b.Kind),
+			Type:  boundaryType(b),
 		})
 	}
 
@@ -128,7 +128,11 @@ func Export(arch *sas.Architecture) DiagramIR {
 // (process, datastore, external-entity, gateway, browser, agent, api).
 // NodeKindActor has no direct match in that enum — DFD conventions treat
 // a human user as outside the system under analysis, which
-// "external-entity" captures better than any other option.
+// "external-entity" captures better than any other option. A container
+// or sandbox node (NodeKindContainer/NodeKindSandbox) is a running
+// workload, so it maps to "process" via the default; the container/
+// sandbox distinction is carried by the enclosing Boundary's type, not
+// the element type (which has no such members).
 func elementType(kind sas.NodeKind) string {
 	switch kind {
 	case sas.NodeKindDataDatabase:
@@ -146,19 +150,32 @@ func elementType(kind sas.NodeKind) string {
 	}
 }
 
-// boundaryType maps a BoundaryKind to threat-model-spec's BoundaryType
-// enum (browser, localhost, network, cloud, breached, container,
-// sandbox, agent, origin). That enum is narrower than SAS's boundary
-// vocabulary and has no generic "trust zone" option, so trust,
-// compliance, and organization boundaries fall back to "network" as the
-// most general infrastructure-boundary type. This is a lossy,
-// best-effort translation — SAS remains the source of truth for what the
-// boundary actually represents; consult the SAS document, not this
-// export, for the real boundary kind.
-func boundaryType(kind sas.BoundaryKind) string {
-	switch kind {
+// boundaryType maps a Boundary to threat-model-spec's BoundaryType enum
+// (browser, localhost, network, cloud, breached, container, sandbox,
+// agent, origin). That enum is narrower than SAS's boundary vocabulary
+// and has no generic "trust zone" option, so trust, compliance, and
+// organization boundaries fall back to "network" as the most general
+// infrastructure-boundary type. This is a lossy, best-effort translation
+// — SAS remains the source of truth for what the boundary actually
+// represents; consult the SAS document, not this export, for the real
+// boundary kind.
+//
+// A boundary carrying the attribute state=breached is exported as
+// "breached" regardless of its kind: a compromised zone is a state
+// overlay a threat model needs to see, and Boundary.Attributes is the
+// least-invasive place to mark it (no schema change, no new extension
+// field). The breached state takes precedence over the kind mapping.
+func boundaryType(b sas.Boundary) string {
+	if b.Attributes["state"] == "breached" {
+		return "breached"
+	}
+	switch b.Kind {
 	case sas.BoundaryKindNetwork:
 		return "network"
+	case sas.BoundaryKindSandbox:
+		return "sandbox"
+	case sas.BoundaryKindContainer:
+		return "container"
 	case sas.BoundaryKindAccount, sas.BoundaryKindRegion, sas.BoundaryKindEnvironment:
 		return "cloud"
 	default:

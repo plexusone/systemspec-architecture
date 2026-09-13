@@ -10,6 +10,14 @@ type NodeKind string
 const (
 	NodeKindComputeFunction NodeKind = "compute.function"
 	NodeKindComputeInstance NodeKind = "compute.instance"
+	// NodeKindContainer is a containerized workload — an OCI container or
+	// a Kubernetes Pod. Vendor/orchestrator specifics (e.g. k8s Pod) live
+	// in Technology, not in the kind.
+	NodeKindContainer NodeKind = "compute.container"
+	// NodeKindSandbox is an isolated sandboxed execution environment — a
+	// CaaS/code-interpreter sandbox or microVM in which untrusted or
+	// agent-generated code runs under strong isolation.
+	NodeKindSandbox         NodeKind = "compute.sandbox"
 	NodeKindDataDatabase    NodeKind = "data.database"
 	NodeKindMessagingQueue  NodeKind = "messaging.queue"
 	NodeKindGateway         NodeKind = "gateway"

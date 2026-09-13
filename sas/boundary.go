@@ -11,6 +11,15 @@ const (
 	BoundaryKindRegion       BoundaryKind = "region"
 	BoundaryKindCompliance   BoundaryKind = "compliance"
 	BoundaryKindOrganization BoundaryKind = "organization"
+	// BoundaryKindSandbox is the isolation boundary around a sandboxed
+	// execution environment (a CaaS/code-interpreter sandbox or microVM),
+	// distinct from a generic network boundary because escaping it is a
+	// distinct, higher-severity event.
+	BoundaryKindSandbox BoundaryKind = "sandbox"
+	// BoundaryKindContainer is the isolation boundary around a container
+	// or Kubernetes Pod, distinct from the host and from the cluster
+	// network it sits in.
+	BoundaryKindContainer BoundaryKind = "container"
 )
 
 // ComplianceBoundary carries control-mapping detail for a Boundary that

@@ -128,6 +128,46 @@ func TestExport_BoundaryTypeMapping(t *testing.T) {
 	}
 }
 
+func TestExport_BoundaryTypeSandboxContainerBreached(t *testing.T) {
+	arch := &sas.Architecture{
+		Metadata: sas.Metadata{Name: "Isolation System"},
+		Nodes: []sas.Node{
+			{ID: "sbx-code", Kind: sas.NodeKindSandbox, Name: "Code Sandbox", Boundaries: []string{"b-sandbox"}},
+			{ID: "svc", Kind: sas.NodeKindContainer, Name: "Worker", Boundaries: []string{"b-container"}},
+		},
+		Boundaries: []sas.Boundary{
+			{ID: "b-sandbox", Kind: sas.BoundaryKindSandbox, Name: "CaaS Sandbox"},
+			{ID: "b-container", Kind: sas.BoundaryKindContainer, Name: "Pod"},
+			// state=breached overrides the kind mapping (kind is network,
+			// but the zone is compromised).
+			{ID: "b-breached", Kind: sas.BoundaryKindNetwork, Name: "Compromised VPC",
+				Attributes: map[string]string{"state": "breached"}},
+		},
+	}
+
+	diagram := Export(arch)
+	byID := make(map[string]Boundary, len(diagram.Boundaries))
+	for _, b := range diagram.Boundaries {
+		byID[b.ID] = b
+	}
+
+	want := map[string]string{
+		"b-sandbox":   "sandbox",
+		"b-container": "container",
+		"b-breached":  "breached",
+	}
+	for id, wantType := range want {
+		b, ok := byID[id]
+		if !ok {
+			t.Errorf("expected boundary %q in export", id)
+			continue
+		}
+		if b.Type != wantType {
+			t.Errorf("boundary %q: got type %q, want %q", id, b.Type, wantType)
+		}
+	}
+}
+
 func TestExport_FlowsCarryProtocolEncryptionAuth(t *testing.T) {
 	diagram := Export(testArchitecture())
 	byRoute := make(map[string]Flow, len(diagram.Flows))
