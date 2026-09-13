@@ -29,11 +29,17 @@ threat modeling, launch readiness, and change analysis are **use-case requiremen
 they prove the model works in practice, but they are consumers of the spec, not the
 spec. See the [Specification](spec.md) for the full normative model.
 
-## Status: v0.1
+## Status: v0.2
 
 The core semantic model, validation engine, three renderers, technology catalogs,
 PIDL protocol bindings, the Threat Model Spec bridge, and assurance coverage reporting
 are implemented and dogfooded end to end on real PlexusOne portfolio systems.
+
+v0.2 adds a semantic **diff engine** (typed `ChangeSet` with change-impact
+classification and a `Baseline`/`Assessment`/`ChangeReview` model), a **FedRAMP
+change-assessment profile** (three-outcome classification with control-mapping
+hooks), and **container/sandbox** node and boundary kinds for K8s-native and
+sandboxed-execution topology.
 
 ## Quick Example
 

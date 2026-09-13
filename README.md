@@ -17,9 +17,9 @@
  [docs-godoc-svg]: https://pkg.go.dev/badge/github.com/plexusone/systemspec-architecture
  [docs-godoc-url]: https://pkg.go.dev/github.com/plexusone/systemspec-architecture
  [docs-mkdoc-svg]: https://img.shields.io/badge/docs-guide-blue.svg
- [docs-mkdoc-url]: https://plexusone.dev/systems-architecture-spec
+ [docs-mkdoc-url]: https://plexusone.dev/systemspec-architecture
  [viz-svg]: https://img.shields.io/badge/repo-visualization-blue.svg
- [viz-url]: https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=plexusone%2Fsystems-architecture-spec
+ [viz-url]: https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=plexusone%2Fsystemspec-architecture
  [license-svg]: https://img.shields.io/badge/license-MIT-blue.svg
  [license-url]: https://github.com/plexusone/systemspec-architecture/blob/main/LICENSE
 
@@ -44,13 +44,15 @@ use case wants something, it belongs in a consumer, a profile, or a namespaced e
 
 ## Status
 
-**v0.1.** The core semantic model, validation engine, three renderers, technology
+**v0.2.** The core semantic model, validation engine, three renderers, technology
 catalogs, PIDL protocol bindings, the Threat Model Spec bridge, and assurance
-coverage reporting are implemented and dogfooded end to end. See
-[`SPEC.md`](SPEC.md) for the normative specification and
+coverage reporting are implemented and dogfooded end to end. v0.2 adds a semantic
+diff engine (typed `ChangeSet` with change-impact classification and a
+`Baseline`/`Assessment`/`ChangeReview` model), a FedRAMP change-assessment
+profile, and container/sandbox node and boundary kinds for K8s-native topology.
+See [`SPEC.md`](SPEC.md) for the normative specification and
 [`docs/specs/initiatives/INIT-SYSTEMSARCHITECTURESPEC-001/`](docs/specs/initiatives/INIT-SYSTEMSARCHITECTURESPEC-001/)
-for the PRD, TRD, PLAN, and ROADMAP. Semantic diff and change-impact analysis
-(Phase 5) are deferred to v0.2; see SPEC.md §12 for the full non-goals list.
+for the PRD, TRD, PLAN, and ROADMAP.
 
 ## Packages
 
@@ -62,6 +64,8 @@ for the PRD, TRD, PLAN, and ROADMAP. Semantic diff and change-impact analysis
 | `render/mermaid`, `render/d2`, `render/dot` | view → diagram renderers, each verified against the real `mmdc`/`d2`/`dot` compilers |
 | `catalog` | AWS/GCP/Kubernetes technology display data and HTTP/SQL/MCP operation mappings |
 | `bridge/threatmodel` | exports an Architecture as the system-under-analysis for [Threat Model Spec](https://github.com/grokify/threat-model-spec), verified against its real JSON Schema |
+| `diff` | semantic diff engine — typed `ChangeSet`, change-impact classification, and the `Baseline`/`Assessment`/`ChangeReview` model |
+| `diff/fedramp` | FedRAMP change-assessment profile — three-outcome classification with control-mapping hooks |
 | `assure` | assurance-reference coverage reporting (tests, metrics, detections, deployment) |
 | `cli` | business logic shared by every CLI command |
 | `cmd/sas` | thin Cobra adapter over `cli` |

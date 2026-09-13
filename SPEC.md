@@ -58,11 +58,16 @@ extensions    namespaced typed data for concerns outside the core shape (§6)
 `kind` is drawn from a small, closed, dotted vocabulary:
 
 ```text
-compute.function     compute.instance     data.database
-messaging.queue      gateway              service
-agent                mcp_server           external_service
-actor
+compute.function     compute.instance     compute.container
+compute.sandbox      data.database        messaging.queue
+gateway              service              agent
+mcp_server           external_service     actor
 ```
+
+`compute.container` is a containerized workload (an OCI container or Kubernetes
+Pod); `compute.sandbox` is an isolated sandboxed execution environment (a
+CaaS/code-interpreter sandbox or microVM). Both remain generic — a specific
+runtime is expressed via `technology`, not a new `kind`.
 
 This vocabulary MUST NOT grow to accommodate specific vendor products.
 "AWS Lambda" is never a new `kind` value — it is `kind: "compute.function"`
@@ -164,8 +169,13 @@ Kind taxonomy:
 
 ```text
 network    trust    environment    account    region
-compliance    organization
+compliance    organization    sandbox    container
 ```
+
+`sandbox` is the isolation boundary around a sandboxed execution environment
+(a CaaS/code-interpreter sandbox or microVM); `container` is the isolation
+boundary around a container or Kubernetes Pod, distinct from the host and the
+cluster.
 
 ### 4.1 Boundary crossing
 
