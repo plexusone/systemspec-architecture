@@ -1,35 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://plexusone.github.io/systems-architecture-spec/</loc>
-         <lastmod>2026-09-07</lastmod>
+         <loc>https://plexusone.github.io/systemspec-architecture/</loc>
+         <lastmod>2026-09-13</lastmod>
     </url>
     <url>
-         <loc>https://plexusone.github.io/systems-architecture-spec/changelog/</loc>
-         <lastmod>2026-09-07</lastmod>
+         <loc>https://plexusone.github.io/systemspec-architecture/changelog/</loc>
+         <lastmod>2026-09-13</lastmod>
     </url>
     <url>
-         <loc>https://plexusone.github.io/systems-architecture-spec/spec/</loc>
-         <lastmod>2026-09-07</lastmod>
+         <loc>https://plexusone.github.io/systemspec-architecture/spec/</loc>
+         <lastmod>2026-09-13</lastmod>
     </url>
     <url>
-         <loc>https://plexusone.github.io/systems-architecture-spec/releases/v0.1.0/</loc>
-         <lastmod>2026-09-07</lastmod>
+         <loc>https://plexusone.github.io/systemspec-architecture/releases/v0.1.0/</loc>
+         <lastmod>2026-09-13</lastmod>
     </url>
     <url>
-         <loc>https://plexusone.github.io/systems-architecture-spec/specs/initiatives/INIT-SYSTEMSARCHITECTURESPEC-001/PLAN/</loc>
-         <lastmod>2026-09-07</lastmod>
+         <loc>https://plexusone.github.io/systemspec-architecture/releases/v0.2.0/</loc>
+         <lastmod>2026-09-13</lastmod>
     </url>
     <url>
-         <loc>https://plexusone.github.io/systems-architecture-spec/specs/initiatives/INIT-SYSTEMSARCHITECTURESPEC-001/PRD/</loc>
-         <lastmod>2026-09-07</lastmod>
+         <loc>https://plexusone.github.io/systemspec-architecture/specs/initiatives/INIT-SYSTEMSARCHITECTURESPEC-001/PLAN/</loc>
+         <lastmod>2026-09-13</lastmod>
     </url>
     <url>
-         <loc>https://plexusone.github.io/systems-architecture-spec/specs/initiatives/INIT-SYSTEMSARCHITECTURESPEC-001/ROADMAP/</loc>
-         <lastmod>2026-09-07</lastmod>
+         <loc>https://plexusone.github.io/systemspec-architecture/specs/initiatives/INIT-SYSTEMSARCHITECTURESPEC-001/PRD/</loc>
+         <lastmod>2026-09-13</lastmod>
     </url>
     <url>
-         <loc>https://plexusone.github.io/systems-architecture-spec/specs/initiatives/INIT-SYSTEMSARCHITECTURESPEC-001/TRD/</loc>
-         <lastmod>2026-09-07</lastmod>
+         <loc>https://plexusone.github.io/systemspec-architecture/specs/initiatives/INIT-SYSTEMSARCHITECTURESPEC-001/ROADMAP/</loc>
+         <lastmod>2026-09-13</lastmod>
+    </url>
+    <url>
+         <loc>https://plexusone.github.io/systemspec-architecture/specs/initiatives/INIT-SYSTEMSARCHITECTURESPEC-001/TRD/</loc>
+         <lastmod>2026-09-13</lastmod>
     </url>
 </urlset>

@@ -10,29 +10,31 @@
       
       
       
-        <link rel="canonical" href="https://plexusone.github.io/systemspec-architecture/">
+        <link rel="canonical" href="https://plexusone.github.io/systemspec-architecture/releases/v0.2.0/">
       
       
+        <link rel="prev" href="../../changelog/">
       
-        <link rel="next" href="spec/">
+      
+        <link rel="next" href="../v0.1.0/">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Systems Architecture Spec</title>
+        <title>v0.2.0 - Systems Architecture Spec</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,7 +55,7 @@
     
       <link rel="stylesheet" href="https://plexusone.dev/css/plexusone-mkdocs.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#systems-architecture-spec" class="md-skip">
+        <a href="#release-notes-v020" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +101,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Systems Architecture Spec" class="md-header__button md-logo" aria-label="Systems Architecture Spec" data-md-component="logo">
+    <a href="../.." title="Systems Architecture Spec" class="md-header__button md-logo" aria-label="Systems Architecture Spec" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -119,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              v0.2.0
             
           </span>
         </div>
@@ -236,7 +238,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Systems Architecture Spec" class="md-nav__button md-logo" aria-label="Systems Architecture Spec" data-md-component="logo">
+    <a href="../.." title="Systems Architecture Spec" class="md-nav__button md-logo" aria-label="Systems Architecture Spec" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -263,37 +265,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Home
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -309,81 +284,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#why-systems-architecture-spec" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Why Systems Architecture Spec?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#status-v02" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Status: v0.2
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quick-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Quick Example
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#integrations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Integrations
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Next Steps
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -395,7 +295,7 @@
   
   
     <li class="md-nav__item">
-      <a href="spec/" class="md-nav__link">
+      <a href="../../spec/" class="md-nav__link">
         
   
   
@@ -476,7 +376,7 @@
   
   
     <li class="md-nav__item">
-      <a href="specs/initiatives/INIT-SYSTEMSARCHITECTURESPEC-001/PRD/" class="md-nav__link">
+      <a href="../../specs/initiatives/INIT-SYSTEMSARCHITECTURESPEC-001/PRD/" class="md-nav__link">
         
   
   
@@ -504,7 +404,7 @@
   
   
     <li class="md-nav__item">
-      <a href="specs/initiatives/INIT-SYSTEMSARCHITECTURESPEC-001/TRD/" class="md-nav__link">
+      <a href="../../specs/initiatives/INIT-SYSTEMSARCHITECTURESPEC-001/TRD/" class="md-nav__link">
         
   
   
@@ -532,7 +432,7 @@
   
   
     <li class="md-nav__item">
-      <a href="specs/initiatives/INIT-SYSTEMSARCHITECTURESPEC-001/PLAN/" class="md-nav__link">
+      <a href="../../specs/initiatives/INIT-SYSTEMSARCHITECTURESPEC-001/PLAN/" class="md-nav__link">
         
   
   
@@ -560,7 +460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="specs/initiatives/INIT-SYSTEMSARCHITECTURESPEC-001/ROADMAP/" class="md-nav__link">
+      <a href="../../specs/initiatives/INIT-SYSTEMSARCHITECTURESPEC-001/ROADMAP/" class="md-nav__link">
         
   
   
@@ -595,7 +495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog/" class="md-nav__link">
+      <a href="../../changelog/" class="md-nav__link">
         
   
   
@@ -619,8 +519,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -631,13 +533,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
@@ -658,7 +558,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -673,10 +573,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="releases/v0.2.0/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v0.2.0
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -692,6 +619,109 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#highlights" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Highlights
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-new" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What's New
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What&#39;s New">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#semantic-diff-and-change-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Semantic Diff and Change Review
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fedramp-change-assessment-profile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FedRAMP Change-Assessment Profile
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#container-sandbox-kinds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Container &amp; Sandbox Kinds
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-rename" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Module Rename
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -704,7 +734,7 @@
   
   
     <li class="md-nav__item">
-      <a href="releases/v0.1.0/" class="md-nav__link">
+      <a href="../v0.1.0/" class="md-nav__link">
         
   
   
@@ -759,10 +789,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#why-systems-architecture-spec" class="md-nav__link">
+  <a href="#highlights" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Why Systems Architecture Spec?
+        Highlights
       
     </span>
   </a>
@@ -770,43 +800,71 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#status-v02" class="md-nav__link">
+  <a href="#whats-new" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Status: v0.2
+        What's New
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What&#39;s New">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#semantic-diff-and-change-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Semantic Diff and Change Review
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#quick-example" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#fedramp-change-assessment-profile" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Quick Example
+        FedRAMP Change-Assessment Profile
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integrations" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#container-sandbox-kinds" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Integrations
+        Container &amp; Sandbox Kinds
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#module-rename" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Next Steps
+        Module Rename
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation
       
     </span>
   </a>
@@ -833,74 +891,52 @@
   
 
 
-<h1 id="systems-architecture-spec">Systems Architecture Spec<a class="headerlink" href="#systems-architecture-spec" title="Permanent link">&para;</a></h1>
-<p>A statically-typed-friendly, Go-first specification for describing software systems as
-semantic graphs: nodes, typed relationships, boundaries, identities, entitlements, and
-protocol bindings.</p>
-<p><strong>Architecture is a typed graph with properties and constraints; diagrams are views over
-that graph.</strong></p>
-<h2 id="why-systems-architecture-spec">Why Systems Architecture Spec?<a class="headerlink" href="#why-systems-architecture-spec" title="Permanent link">&para;</a></h2>
-<p>Architecture today lives in draw.io/Lucidchart files that preserve geometry and labels
-but lose the semantics of what a node <em>is</em>, what an edge <em>means</em>, who owns it, what
-trust zone it sits in, and what policy governs it. SAS makes those facts machine-checkable:</p>
+<h1 id="release-notes-v020">Release Notes: v0.2.0<a class="headerlink" href="#release-notes-v020" title="Permanent link">&para;</a></h1>
+<p><strong>Release Date:</strong> 2026-09-13</p>
+<h2 id="highlights">Highlights<a class="headerlink" href="#highlights" title="Permanent link">&para;</a></h2>
+<p>v0.2.0 adds change analysis and container/sandbox topology to the SAS model, and
+renames the Go module to match the renamed repository:</p>
 <ul>
-<li><strong>Nodes and relationships</strong> — typed, not shapes and arrows. A relationship carries
-  transport, operations, identity, entitlements, data classification, and boundary
-  crossings, not just a label.</li>
-<li><strong>Boundaries as objects</strong> — a node commonly belongs to an account, a region, a trust
-  zone, and a compliance boundary at once; "crossing" is computed from membership, not
-  a single nesting hierarchy.</li>
-<li><strong>Views, not diagram files</strong> — one canonical model produces development, deployment,
-  security, and threat-model projections without semantic drift.</li>
-<li><strong>Profiles, not levels</strong> — semantics are optional in the core and required only by
-  the profile that needs them, so a minimal architecture file stays minimal.</li>
+<li><strong>Semantic diff engine</strong> — a typed <code>ChangeSet</code> between two architectures, with
+  change-impact classification.</li>
+<li><strong>Baseline / Assessment / ChangeReview model</strong> — structured review of an
+  architecture change against a baseline.</li>
+<li><strong>FedRAMP change-assessment profile</strong> — three-outcome change classification
+  with control-mapping hooks and decision-support language.</li>
+<li><strong>Container &amp; sandbox topology</strong> — new <code>compute.container</code> / <code>compute.sandbox</code>
+  node kinds and <code>container</code> / <code>sandbox</code> boundary kinds for K8s-native and
+  sandboxed-execution modeling; the Threat Model Spec bridge now emits
+  <code>sandbox</code> / <code>container</code> / <code>breached</code> instead of collapsing to <code>network</code>.</li>
+<li><strong>Module rename</strong> — <code>github.com/plexusone/systems-architecture-spec</code> →
+  <code>github.com/plexusone/systemspec-architecture</code>.</li>
 </ul>
-<p>The primary responsibility of this project is the semantic model itself. Diagrams,
-threat modeling, launch readiness, and change analysis are <strong>use-case requirements</strong>:
-they prove the model works in practice, but they are consumers of the spec, not the
-spec. See the <a href="spec/">Specification</a> for the full normative model.</p>
-<h2 id="status-v02">Status: v0.2<a class="headerlink" href="#status-v02" title="Permanent link">&para;</a></h2>
-<p>The core semantic model, validation engine, three renderers, technology catalogs,
-PIDL protocol bindings, the Threat Model Spec bridge, and assurance coverage reporting
-are implemented and dogfooded end to end on real PlexusOne portfolio systems.</p>
-<p>v0.2 adds a semantic <strong>diff engine</strong> (typed <code>ChangeSet</code> with change-impact
-classification and a <code>Baseline</code>/<code>Assessment</code>/<code>ChangeReview</code> model), a <strong>FedRAMP
-change-assessment profile</strong> (three-outcome classification with control-mapping
-hooks), and <strong>container/sandbox</strong> node and boundary kinds for K8s-native and
-sandboxed-execution topology.</p>
-<h2 id="quick-example">Quick Example<a class="headerlink" href="#quick-example" title="Permanent link">&para;</a></h2>
+<h2 id="whats-new">What's New<a class="headerlink" href="#whats-new" title="Permanent link">&para;</a></h2>
+<h3 id="semantic-diff-and-change-review">Semantic Diff and Change Review<a class="headerlink" href="#semantic-diff-and-change-review" title="Permanent link">&para;</a></h3>
+<p>A new <code>diff</code> package computes a typed <code>ChangeSet</code> between two <code>Architecture</code>
+models, classifies the impact of each change, and produces a
+<code>Baseline</code>/<code>Assessment</code>/<code>ChangeReview</code> structure for reviewing an architecture
+change against a baseline.</p>
+<h3 id="fedramp-change-assessment-profile">FedRAMP Change-Assessment Profile<a class="headerlink" href="#fedramp-change-assessment-profile" title="Permanent link">&para;</a></h3>
+<p><code>diff/fedramp</code> provides a three-outcome change classification (with
+control-mapping hooks and decision-support language) aimed at FedRAMP
+significant-change assessments.</p>
+<h3 id="container-sandbox-kinds">Container &amp; Sandbox Kinds<a class="headerlink" href="#container-sandbox-kinds" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Node kinds: <code>compute.container</code> (an OCI container or Kubernetes Pod) and
+  <code>compute.sandbox</code> (a CaaS/code-interpreter sandbox or microVM).</li>
+<li>Boundary kinds: <code>container</code> and <code>sandbox</code>.</li>
+<li><code>bridge/threatmodel.boundaryType()</code> now emits <code>sandbox</code> / <code>container</code> /
+  <code>breached</code> rather than collapsing these to <code>network</code>.</li>
+</ul>
+<p>See <a href="../../spec/"><code>SPEC.md</code></a> §2.1 and §4 for the updated kind taxonomies.</p>
+<h3 id="module-rename">Module Rename<a class="headerlink" href="#module-rename" title="Permanent link">&para;</a></h3>
+<p>The Go module and repository were renamed to
+<code>github.com/plexusone/systemspec-architecture</code>. Update imports accordingly:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="s">&quot;github.com/plexusone/systemspec-architecture/sas&quot;</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nx">arch</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">sas</span><span class="p">.</span><span class="nx">Architecture</span><span class="p">{</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nx">Version</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0.1&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="nx">Nodes</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="nx">sas</span><span class="p">.</span><span class="nx">Node</span><span class="p">{</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">        </span><span class="p">{</span><span class="nx">ID</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;web&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">Kind</span><span class="p">:</span><span class="w"> </span><span class="nx">sas</span><span class="p">.</span><span class="nx">NodeKindService</span><span class="p">,</span><span class="w"> </span><span class="nx">Name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Storefront&quot;</span><span class="p">},</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">        </span><span class="p">{</span><span class="nx">ID</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;db&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">Kind</span><span class="p">:</span><span class="w"> </span><span class="nx">sas</span><span class="p">.</span><span class="nx">NodeKindDataDatabase</span><span class="p">,</span><span class="w"> </span><span class="nx">Name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Orders Database&quot;</span><span class="p">},</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="p">},</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="nx">Relationships</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="nx">sas</span><span class="p">.</span><span class="nx">Relationship</span><span class="p">{</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">        </span><span class="p">{</span><span class="nx">ID</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;web-to-db&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">From</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;web&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">To</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;db&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">Kind</span><span class="p">:</span><span class="w"> </span><span class="nx">sas</span><span class="p">.</span><span class="nx">RelationKindDataAccess</span><span class="p">},</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="p">},</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sas<span class="w"> </span>validate<span class="w"> </span>&lt;architecture.json&gt;<span class="w"> </span>--profile<span class="w"> </span>security
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>sas<span class="w"> </span>view<span class="w"> </span>&lt;architecture.json&gt;<span class="w"> </span>--view<span class="w"> </span>context<span class="w"> </span>--format<span class="w"> </span>d2
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>go<span class="w"> </span>get<span class="w"> </span>github.com/plexusone/systemspec-architecture@v0.2.0
 </code></pre></div>
-<p><code>sas validate --profile security</code> is the launch-readiness gate: run it before a
-system with internet-facing traffic goes to production.</p>
-<h2 id="integrations">Integrations<a class="headerlink" href="#integrations" title="Permanent link">&para;</a></h2>
-<p>SAS binds to specialized specs by reference rather than absorbing them:</p>
-<ul>
-<li><a href="https://github.com/grokify/pidl">PIDL</a> for protocol choreography</li>
-<li><a href="https://github.com/grokify/threat-model-spec">Threat Model Spec</a> for risk reasoning</li>
-<li><a href="https://github.com/plexusone/multi-agent-spec">Multi-Agent Spec</a> for agent definitions</li>
-</ul>
-<h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Read the <a href="spec/">Specification</a> for the full data model.</li>
-<li>See the <a href="specs/initiatives/INIT-SYSTEMSARCHITECTURESPEC-001/PRD/">PRD</a> for the
-  problem this project solves and who it's for.</li>
-<li>Browse the <a href="releases/v0.1.0/">v0.1.0 release notes</a> for what shipped.</li>
-</ul>
 
 
 
@@ -972,10 +1008,10 @@ system with internet-facing traffic goes to production.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.sections", "navigation.expand", "navigation.top", "search.highlight", "content.code.copy"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.expand", "navigation.top", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
