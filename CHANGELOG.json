@@ -10,6 +10,60 @@
   ],
   "releases": [
     {
+      "version": "v0.2.0",
+      "date": "2026-09-13",
+      "highlights": [
+        {
+          "description": "Semantic diff engine: a typed ChangeSet between two architectures with change-impact classification"
+        },
+        {
+          "description": "Baseline / Assessment / ChangeReview model for reviewing an architecture change against a baseline"
+        },
+        {
+          "description": "FedRAMP change-assessment profile: three-outcome classification with control-mapping hooks"
+        },
+        {
+          "description": "Container & sandbox node/boundary kinds for K8s-native and sandboxed-execution topology"
+        },
+        {
+          "description": "Module renamed to github.com/plexusone/systemspec-architecture"
+        }
+      ],
+      "added": [
+        {
+          "description": "Semantic diff engine with a typed ChangeSet",
+          "commit": "51c281a"
+        },
+        {
+          "description": "Change-impact classification for diffs",
+          "commit": "80f3d42"
+        },
+        {
+          "description": "Baseline, Assessment, and ChangeReview model",
+          "commit": "40bc2c0"
+        },
+        {
+          "description": "compute.container/compute.sandbox node kinds and container/sandbox boundary kinds; bridge/threatmodel.boundaryType() emits sandbox/container/breached instead of collapsing to network",
+          "commit": "4e146ce"
+        },
+        {
+          "description": "FedRAMP change-assessment profile (diff/fedramp)",
+          "commit": "92affaf"
+        }
+      ],
+      "changed": [
+        {
+          "description": "Rename Go module to github.com/plexusone/systemspec-architecture (repo rename; mechanical import-path rewrite)",
+          "commit": "2c19dc0"
+        }
+      ],
+      "documentation": [
+        {
+          "description": "Document container/sandbox kinds in SPEC.md (kind taxonomies); update README/index status to v0.2 and add the diff and diff/fedramp packages; add v0.2.0 release notes"
+        }
+      ]
+    },
+    {
       "version": "v0.1.0",
       "date": "2026-09-07",
       "commit": "728c446",
@@ -17,126 +71,174 @@
         {
           "description": "Initial release: a statically-typed-friendly, Go-first semantic graph model for systems architecture (Node, Relationship, Boundary, Identity, Entitlement, Extensions), with generated JSON Schema and Zod/TypeScript conforming to the same fixture corpus as the Go model",
           "commit": "474052a",
-          "rmis": ["RMI-SYSTEMSARCHITECTURESPEC-005"]
+          "rmis": [
+            "RMI-SYSTEMSARCHITECTURESPEC-005"
+          ]
         },
         {
           "description": "Views as queries plus Mermaid/D2/Graphviz DOT renderers, each verified against the real d2/dot CLIs, closing the diagrams payoff (M2): SAS replaces hand-drawn diagrams for a real horizontal and vertical portfolio app",
           "commit": "b895dd9",
-          "rmis": ["RMI-SYSTEMSARCHITECTURESPEC-015"]
+          "rmis": [
+            "RMI-SYSTEMSARCHITECTURESPEC-015"
+          ]
         },
         {
           "description": "Profile-conditional validation (development, deployment, security, threat-model, sre) including launch-readiness rules that gate internet-facing traffic before go-live",
           "commit": "63f6105",
-          "rmis": ["RMI-SYSTEMSARCHITECTURESPEC-027"]
+          "rmis": [
+            "RMI-SYSTEMSARCHITECTURESPEC-027"
+          ]
         },
         {
           "description": "PIDL ProtocolBinding and the Threat Model Spec bridge, both verified against the real external schemas they integrate with rather than internal assumptions about their shape, closing the launch-readiness payoff (M3) and v0.1",
           "commit": "6d9b637",
-          "rmis": ["RMI-SYSTEMSARCHITECTURESPEC-026"]
+          "rmis": [
+            "RMI-SYSTEMSARCHITECTURESPEC-026"
+          ]
         }
       ],
       "added": [
         {
           "description": "Core semantic graph types Architecture, Node, and Boundary, with a small closed NodeKind vocabulary, many-to-many boundary membership, and assurance evidence references",
           "commit": "a5ffa0e",
-          "rmis": ["RMI-SYSTEMSARCHITECTURESPEC-001"]
+          "rmis": [
+            "RMI-SYSTEMSARCHITECTURESPEC-001"
+          ]
         },
         {
           "description": "Relationship as the richest core type: transport, generic operation verbs, identity, entitlements, data classification, and boundary-crossing — the security-significant facts most diagram formats collapse into an unlabeled arrow",
           "commit": "625f496",
-          "rmis": ["RMI-SYSTEMSARCHITECTURESPEC-002"]
+          "rmis": [
+            "RMI-SYSTEMSARCHITECTURESPEC-002"
+          ]
         },
         {
           "description": "First-class Identity (type, mechanism, ref) and Entitlement (subject-action-resource) types shaped to map cleanly onto ReBAC systems without making SAS a ReBAC engine",
           "commit": "6b79b90",
-          "rmis": ["RMI-SYSTEMSARCHITECTURESPEC-003"]
+          "rmis": [
+            "RMI-SYSTEMSARCHITECTURESPEC-003"
+          ]
         },
         {
           "description": "Extensions as explicit, statically typed namespace fields (security, sre, compliance, agent) instead of a generic map, and ExternalRef for pointing at detail owned by OpenAPI, PIDL, Threat Model Spec, Multi-Agent Spec, Terraform, and OTel",
           "commit": "bfdac78",
-          "rmis": ["RMI-SYSTEMSARCHITECTURESPEC-004"]
+          "rmis": [
+            "RMI-SYSTEMSARCHITECTURESPEC-004"
+          ]
         },
         {
           "description": "JSON Schema generation from the Go model via invopop/jsonschema (lint-clean under schemakit's camelCase profile) and Zod/TypeScript types generated from that schema, proven by a shared fixture round-tripping through both Go and TypeScript. Closes Phase 1 (Core IR & Schema Pipeline)",
           "commit": "474052a",
-          "rmis": ["RMI-SYSTEMSARCHITECTURESPEC-005"]
+          "rmis": [
+            "RMI-SYSTEMSARCHITECTURESPEC-005"
+          ]
         },
         {
           "description": "View as a query over an Architecture (IncludeKinds/IncludeRelations/IncludeBoundaries) and CrossedBoundaries, which derives which boundaries a relationship crosses from its endpoints' declared membership",
           "commit": "1b0c448",
-          "rmis": ["RMI-SYSTEMSARCHITECTURESPEC-006"]
+          "rmis": [
+            "RMI-SYSTEMSARCHITECTURESPEC-006"
+          ]
         },
         {
           "description": "Profile model (development, deployment, security, threat-model, sre): optional-in-core semantics that become mandatory only for the profile that needs them",
           "commit": "5522a1a",
-          "rmis": ["RMI-SYSTEMSARCHITECTURESPEC-007"]
+          "rmis": [
+            "RMI-SYSTEMSARCHITECTURESPEC-007"
+          ]
         },
         {
           "description": "Validation rules engine: always-on referential-integrity checks plus profile-conditional rules for deployment, security, threat-model, and sre",
           "commit": "b4908cc",
-          "rmis": ["RMI-SYSTEMSARCHITECTURESPEC-008"]
+          "rmis": [
+            "RMI-SYSTEMSARCHITECTURESPEC-008"
+          ]
         },
         {
           "description": "sas CLI foundation (cli business-logic package plus a thin Cobra cmd/sas adapter) with `sas validate`",
           "commit": "4ebd340",
-          "rmis": ["RMI-SYSTEMSARCHITECTURESPEC-009"]
+          "rmis": [
+            "RMI-SYSTEMSARCHITECTURESPEC-009"
+          ]
         },
         {
           "description": "Invalid-fixture schema-conformance coverage and end-to-end dogfooding of two real portfolio architectures, fixing two genuine gaps validate surfaced (missing OAuth identity and data classification)",
           "commit": "a39ec0e",
-          "rmis": ["RMI-SYSTEMSARCHITECTURESPEC-010"]
+          "rmis": [
+            "RMI-SYSTEMSARCHITECTURESPEC-010"
+          ]
         },
         {
           "description": "Shared render package (boundary-based node grouping, shape-by-kind, edge labeling) and the Mermaid renderer",
           "commit": "44e8f25",
-          "rmis": ["RMI-SYSTEMSARCHITECTURESPEC-011"]
+          "rmis": [
+            "RMI-SYSTEMSARCHITECTURESPEC-011"
+          ]
         },
         {
           "description": "D2 renderer, verified against the real d2 CLI compiling generated output to SVG",
           "commit": "5c90796",
-          "rmis": ["RMI-SYSTEMSARCHITECTURESPEC-012"]
+          "rmis": [
+            "RMI-SYSTEMSARCHITECTURESPEC-012"
+          ]
         },
         {
           "description": "Graphviz DOT renderer, verified against the real dot CLI compiling generated output to SVG",
           "commit": "ef7330e",
-          "rmis": ["RMI-SYSTEMSARCHITECTURESPEC-013"]
+          "rmis": [
+            "RMI-SYSTEMSARCHITECTURESPEC-013"
+          ]
         },
         {
           "description": "AWS/GCP/Kubernetes technology display-name and icon-hint catalogs, plus HTTP/SQL/MCP operation-to-generic-verb mappings",
           "commit": "a747498",
-          "rmis": ["RMI-SYSTEMSARCHITECTURESPEC-014"]
+          "rmis": [
+            "RMI-SYSTEMSARCHITECTURESPEC-014"
+          ]
         },
         {
           "description": "`sas view`, rendering a declared or ad-hoc view as Mermaid, D2, or DOT. Closes Phase 3 (Rendering & Catalogs) and the M2 milestone: SAS replaces hand-drawn diagrams for a real horizontal and vertical portfolio app",
           "commit": "b895dd9",
-          "rmis": ["RMI-SYSTEMSARCHITECTURESPEC-015"]
+          "rmis": [
+            "RMI-SYSTEMSARCHITECTURESPEC-015"
+          ]
         },
         {
           "description": "ProtocolBinding, instantiating a PIDL protocol's abstract entities as concrete SAS nodes, and `sas bind`, verified against the real github.com/grokify/pidl OAuth 2.0 Authorization Code example",
           "commit": "0e0e104",
-          "rmis": ["RMI-SYSTEMSARCHITECTURESPEC-021"]
+          "rmis": [
+            "RMI-SYSTEMSARCHITECTURESPEC-021"
+          ]
         },
         {
           "description": "`sas assure`, reporting per-category assurance-evidence coverage (tests, metrics, detections, deployment) with a concrete per-element gap list, not just a summary percentage",
           "commit": "9f099c9",
-          "rmis": ["RMI-SYSTEMSARCHITECTURESPEC-022"]
+          "rmis": [
+            "RMI-SYSTEMSARCHITECTURESPEC-022"
+          ]
         },
         {
           "description": "Threat Model Spec bridge (`sas export threat-model`), translating an Architecture into DiagramIR's system-under-analysis, verified against the real published threat-model-spec JSON Schema",
           "commit": "6d9b637",
-          "rmis": ["RMI-SYSTEMSARCHITECTURESPEC-026"]
+          "rmis": [
+            "RMI-SYSTEMSARCHITECTURESPEC-026"
+          ]
         },
         {
           "description": "Launch-readiness rules under the security profile: every internet-facing relationship must declare transport encryption, identity, and data classification, and its target node must declare an owner — the single command a launch checklist runs before going live. Closes Phase 4 and v0.1 (M3)",
           "commit": "63f6105",
-          "rmis": ["RMI-SYSTEMSARCHITECTURESPEC-027"]
+          "rmis": [
+            "RMI-SYSTEMSARCHITECTURESPEC-027"
+          ]
         }
       ],
       "build": [
         {
           "description": "GitHub Actions workflow running go build/vet/test/golangci-lint, schemakit lint against the embedded JSON Schema, and the TypeScript/Zod typecheck+test suite on every push and pull request",
           "commit": "1cf6aed",
-          "rmis": ["RMI-SYSTEMSARCHITECTURESPEC-025"]
+          "rmis": [
+            "RMI-SYSTEMSARCHITECTURESPEC-025"
+          ]
         },
         {
           "description": "Adopt the plexusone org's shared reusable GitHub Actions workflows (go-ci, go-lint, go-sast-codeql) and Dependabot configuration",
@@ -161,12 +263,16 @@
         {
           "description": "SPEC.md, the normative specification of the SAS data model. Closes v0.1 (M3) alongside the launch-readiness rules",
           "commit": "10220f4",
-          "rmis": ["RMI-SYSTEMSARCHITECTURESPEC-025"]
+          "rmis": [
+            "RMI-SYSTEMSARCHITECTURESPEC-025"
+          ]
         },
         {
           "description": "Update README to reflect the shipped v0.1 implementation: real package layout, CLI surface, and a verified working example",
           "commit": "cb77d5f",
-          "rmis": ["RMI-SYSTEMSARCHITECTURESPEC-025"]
+          "rmis": [
+            "RMI-SYSTEMSARCHITECTURESPEC-025"
+          ]
         },
         {
           "description": "Add GitHub Actions/status badges to README",
@@ -189,7 +295,9 @@
         {
           "description": "Suppress gosec false positives on the AWS/Kubernetes display-name lookup maps, which its variable-name heuristic misflags as potential hardcoded credentials",
           "commit": "3ae2b6f",
-          "rmis": ["RMI-SYSTEMSARCHITECTURESPEC-025"]
+          "rmis": [
+            "RMI-SYSTEMSARCHITECTURESPEC-025"
+          ]
         }
       ]
     }

@@ -1,6 +1,6 @@
 site_name: Systems Architecture Spec
 site_description: A statically-typed-friendly, Go-first specification for describing software systems as semantic graphs
-site_url: https://plexusone.github.io/systems-architecture-spec/
+site_url: https://plexusone.github.io/systemspec-architecture/
 repo_url: https://github.com/plexusone/systemspec-architecture
 repo_name: plexusone/systemspec-architecture
 
@@ -56,6 +56,7 @@ nav:
       - ROADMAP: specs/initiatives/INIT-SYSTEMSARCHITECTURESPEC-001/ROADMAP.md
   - Changelog: changelog.md
   - Releases:
+      - v0.2.0: releases/v0.2.0.md
       - v0.1.0: releases/v0.1.0.md
 
 extra:
