@@ -3,7 +3,7 @@ package validate
 import (
 	"fmt"
 
-	"github.com/plexusone/systems-architecture-spec/sas"
+	"github.com/plexusone/systemspec-architecture/sas"
 )
 
 // sreCriticalTiers are the Criticality values the sre profile treats as

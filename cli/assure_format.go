@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/plexusone/systems-architecture-spec/assure"
+	"github.com/plexusone/systemspec-architecture/assure"
 )
 
 // FormatAssureReport renders an assure.Report as either human-readable

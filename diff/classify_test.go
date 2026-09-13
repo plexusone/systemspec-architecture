@@ -3,7 +3,7 @@ package diff
 import (
 	"testing"
 
-	"github.com/plexusone/systems-architecture-spec/sas"
+	"github.com/plexusone/systemspec-architecture/sas"
 )
 
 // The four scenarios PLAN.md's M4 milestone names as canonical, plus the

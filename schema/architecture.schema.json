@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/plexusone/systems-architecture-spec/sas/architecture",
+  "$id": "https://github.com/plexusone/systemspec-architecture/sas/architecture",
   "$defs": {
     "AgentExtension": {
       "properties": {

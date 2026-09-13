@@ -7,8 +7,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/plexusone/systems-architecture-spec/cli"
-	"github.com/plexusone/systems-architecture-spec/validate"
+	"github.com/plexusone/systemspec-architecture/cli"
+	"github.com/plexusone/systemspec-architecture/validate"
 )
 
 func newValidateCmd() *cobra.Command {

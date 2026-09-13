@@ -1,0 +1,71 @@
+{
+  "version": "0.1",
+  "metadata": {
+    "name": "isolated-sandbox-system",
+    "description": "Exercises isolated-sandbox and K8s-native topology: a code-interpreter sandbox inside a sandbox boundary, and a containerized worker (Pod) inside a container boundary within a cluster namespace.",
+    "owner": "platform-team"
+  },
+  "nodes": [
+    {
+      "id": "agent",
+      "kind": "agent",
+      "name": "Coding Agent",
+      "owner": "platform-team",
+      "boundaries": ["ns-agents"],
+      "extensions": { "agent": { "runtime": true } }
+    },
+    {
+      "id": "sandbox",
+      "kind": "compute.sandbox",
+      "name": "Code Interpreter Sandbox",
+      "owner": "platform-team",
+      "boundaries": ["sbx-untrusted"]
+    },
+    {
+      "id": "worker",
+      "kind": "compute.container",
+      "name": "Worker Pod",
+      "owner": "platform-team",
+      "technology": { "provider": "k8s", "service": "pod" },
+      "boundaries": ["container-worker", "ns-agents"]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "agent-to-sandbox",
+      "from": "agent",
+      "to": "sandbox",
+      "kind": "calls",
+      "transport": { "applicationProtocol": "https", "encryption": "tls" },
+      "operations": ["create", "execute"],
+      "crossesBoundaries": ["sbx-untrusted"]
+    },
+    {
+      "id": "agent-to-worker",
+      "from": "agent",
+      "to": "worker",
+      "kind": "calls",
+      "transport": { "applicationProtocol": "grpc", "encryption": "tls" },
+      "crossesBoundaries": ["container-worker"]
+    }
+  ],
+  "boundaries": [
+    {
+      "id": "ns-agents",
+      "kind": "network",
+      "name": "agents Namespace",
+      "attributes": { "k8s": "namespace", "cluster": "prod" }
+    },
+    {
+      "id": "sbx-untrusted",
+      "kind": "sandbox",
+      "name": "Untrusted Sandbox Isolation",
+      "attributes": { "state": "breached" }
+    },
+    {
+      "id": "container-worker",
+      "kind": "container",
+      "name": "Worker Pod Container"
+    }
+  ]
+}

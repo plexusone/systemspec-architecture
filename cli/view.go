@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/plexusone/systems-architecture-spec/render/d2"
-	"github.com/plexusone/systems-architecture-spec/render/dot"
-	"github.com/plexusone/systems-architecture-spec/render/mermaid"
-	"github.com/plexusone/systems-architecture-spec/sas"
+	"github.com/plexusone/systemspec-architecture/render/d2"
+	"github.com/plexusone/systemspec-architecture/render/dot"
+	"github.com/plexusone/systemspec-architecture/render/mermaid"
+	"github.com/plexusone/systemspec-architecture/sas"
 )
 
 // ViewOptions configures a View render.

@@ -3,7 +3,7 @@ package catalog
 import (
 	"testing"
 
-	"github.com/plexusone/systems-architecture-spec/sas"
+	"github.com/plexusone/systemspec-architecture/sas"
 )
 
 func TestDisplayName_KnownCombinations(t *testing.T) {
@@ -15,6 +15,11 @@ func TestDisplayName_KnownCombinations(t *testing.T) {
 		{sas.Technology{Provider: "aws", Service: "rds"}, "Amazon RDS"},
 		{sas.Technology{Provider: "gcp", Service: "cloud-run"}, "Google Cloud Run"},
 		{sas.Technology{Provider: "k8s", Service: "deployment"}, "Kubernetes Deployment"},
+		{sas.Technology{Provider: "k8s", Service: "namespace"}, "Kubernetes Namespace"},
+		{sas.Technology{Provider: "k8s", Service: "cluster"}, "Kubernetes Cluster"},
+		{sas.Technology{Provider: "k8s", Service: "pod"}, "Kubernetes Pod"},
+		{sas.Technology{Provider: "k8s", Service: "service_account"}, "Kubernetes ServiceAccount"},
+		{sas.Technology{Provider: "k8s", Service: "rolebinding"}, "Kubernetes RoleBinding"},
 	}
 	for _, tt := range tests {
 		if got := DisplayName(&tt.tech); got != tt.want {

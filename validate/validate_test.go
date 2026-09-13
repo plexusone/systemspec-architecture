@@ -3,7 +3,7 @@ package validate
 import (
 	"testing"
 
-	"github.com/plexusone/systems-architecture-spec/sas"
+	"github.com/plexusone/systemspec-architecture/sas"
 )
 
 func hasRule(findings []Finding, ruleID string) bool {

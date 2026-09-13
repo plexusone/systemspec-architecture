@@ -3,7 +3,7 @@ package validate
 import (
 	"fmt"
 
-	"github.com/plexusone/systems-architecture-spec/sas"
+	"github.com/plexusone/systemspec-architecture/sas"
 )
 
 // checkThreatModel implements the threat-model profile: a relationship

@@ -1,6 +1,6 @@
 package assure
 
-import "github.com/plexusone/systems-architecture-spec/sas"
+import "github.com/plexusone/systemspec-architecture/sas"
 
 // ElementKind distinguishes a node from a relationship in a Gap.
 type ElementKind string

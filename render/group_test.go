@@ -3,7 +3,7 @@ package render
 import (
 	"testing"
 
-	"github.com/plexusone/systems-architecture-spec/sas"
+	"github.com/plexusone/systemspec-architecture/sas"
 )
 
 func testGroupArchitecture() sas.Architecture {

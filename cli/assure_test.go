@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/plexusone/systems-architecture-spec/assure"
+	"github.com/plexusone/systemspec-architecture/assure"
 )
 
 const architectureForAssureJSON = `{

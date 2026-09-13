@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/plexusone/systems-architecture-spec/validate"
+	"github.com/plexusone/systemspec-architecture/validate"
 )
 
 func writeTempArchitecture(t *testing.T, contents string) string {

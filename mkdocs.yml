@@ -1,8 +1,8 @@
 site_name: Systems Architecture Spec
 site_description: A statically-typed-friendly, Go-first specification for describing software systems as semantic graphs
 site_url: https://plexusone.github.io/systems-architecture-spec/
-repo_url: https://github.com/plexusone/systems-architecture-spec
-repo_name: plexusone/systems-architecture-spec
+repo_url: https://github.com/plexusone/systemspec-architecture
+repo_name: plexusone/systemspec-architecture
 
 theme:
   name: material
@@ -61,4 +61,4 @@ nav:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/plexusone/systems-architecture-spec
+      link: https://github.com/plexusone/systemspec-architecture

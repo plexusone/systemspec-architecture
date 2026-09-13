@@ -5,7 +5,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/plexusone/systems-architecture-spec/cli"
+	"github.com/plexusone/systemspec-architecture/cli"
 )
 
 func newExportCmd() *cobra.Command {

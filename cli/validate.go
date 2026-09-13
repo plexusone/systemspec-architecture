@@ -6,8 +6,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/plexusone/systems-architecture-spec/sas"
-	"github.com/plexusone/systems-architecture-spec/validate"
+	"github.com/plexusone/systemspec-architecture/sas"
+	"github.com/plexusone/systemspec-architecture/validate"
 )
 
 // ValidateOptions configures a Validate run.
